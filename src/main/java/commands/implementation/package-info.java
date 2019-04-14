@@ -1,0 +1,4 @@
+@CommandPackageAnnotation
+package commands.implementation;
+
+import annotations.CommandPackageAnnotation;
