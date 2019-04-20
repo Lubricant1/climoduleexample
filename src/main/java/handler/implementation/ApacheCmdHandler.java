@@ -28,9 +28,9 @@ public class ApacheCmdHandler implements CmdHandler {
                 boolean success = CommandFactory
                     .getInstance().getCommand(option).execute(context, parameters);
                 if (!success)
-                    printHelp();
+                    throw new RuntimeException();
             }
-        } catch (ParseException e) {
+        } catch (Exception e) {
             printHelp();
         }
     }
